@@ -14,7 +14,7 @@
 }
 #home h1{
     font-size:4rem;
-    width:12ch;
+    max-width:12ch;
     margin-bottom:10px;
 }
 #home p{
