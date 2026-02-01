@@ -1,15 +1,16 @@
 
 #home .align-content{
     display:grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1.5fr;
     place-items: center start;
     gap:50px;
     justify-content:center;
 }
 #home .container-img img{
-    width:100%;
+    width:80%;
     display:block;
     /* object-fit: cover; */
+    margin:0 auto;
 }
 #home h1{
     font-size:4rem;
@@ -36,7 +37,6 @@
 @media(max-width:590px){
     #home .align-content{
         grid-template-columns:1fr;
-        gap:20px;
     }
     #info-home{
         grid-row:1;
