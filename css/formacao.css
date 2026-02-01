@@ -1,0 +1,132 @@
+#formacao{
+    background:#141414;
+    color:white;
+}
+#formacao .align-content{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    padding-top:150px;
+    padding-bottom:150px;
+    gap:70px;
+}
+#formacao .col-2{
+    display:grid;
+    gap:60px;
+}
+#formacao h2{
+    color:#000;
+    font-size:8.5rem;
+    word-wrap:break-word;
+    max-width:4ch;
+    text-transform:uppercase;
+    line-height: 1.1;
+}
+#formacao .primeiro-paragrafo{
+    color:#9F9FA3;
+    font-size:1.5rem;
+    text-align:justify;
+}
+#formacoes{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+}
+#formacoes .formacoes-itens{
+    background-color:#000;
+    padding:20px;
+    border-radius:5px;
+    display:grid;
+    gap:20px;
+    position:relative;
+}
+#formacoes .grau-formacao, #formacoes .instituicao{
+    color:#9F9FA3;
+    font-size:1.1rem;
+}
+#formacoes .instituicao{
+    font-weight:bold;
+}
+#formacoes .nome-formacao{
+    font-size:1.2rem;
+}
+#formacoes .formacoes-itens::before{
+    content:"";
+    display:inline-block;
+    background-color:#70DA1C;
+    position:absolute;
+    top:20px;
+    left:-4px;
+    width:4px;
+    height:25px;
+}
+#formacao h3{
+    color:#9F9FA3;
+    margin:20px 0;
+    text-transform:uppercase;
+    font-size:0.9rem;
+    position:relative;
+}
+#cursos .curso{
+    display:flex;
+    place-content:center space-between;
+    margin:10px 0;
+    font-size:1.2rem;
+}
+#formacao h3::before{
+    display:inline-block;
+    position:absolute;
+    left:-35px;
+    top:-3px;;
+}
+#cursos h3::before{
+    content:url(../img/cursos.svg);
+}
+#idiomas h3::before{
+    content:url(../img/idiomas.svg);
+}
+#idiomas span, #cursos p{
+    color:#9F9FA3;
+}
+@media(max-width:1150px){
+    #formacao .align-content{
+        grid-template-columns: 1fr;
+    }
+    #formacao h2{
+        font-size:6rem;
+        max-width:100%;
+        word-break:keep-all;
+    }
+    #formacao h3::before{
+        display:block;
+        position:relative;
+        left:0;
+        top:0;
+    }
+    #formacoes{
+        grid-template-columns: 1fr 1fr;
+    }
+    #formacoes .formacoes-itens:nth-child(3){
+        grid-column: span 2;
+    }
+}
+@media(max-width:720px){
+    #formacao h2{
+        font-size:4.5rem;
+    }
+}
+@media(max-width:520px){
+    #formacoes{
+        grid-template-columns: 1fr ;
+    }   
+    #formacoes .formacoes-itens:nth-child(3){
+        grid-column: 1;
+    } 
+    #formacao h2{
+        font-size:2.5rem;
+        color:#FFF;
+    }
+    #formacao .align-content{
+        padding-top:90px;
+        padding-bottom:90px;
+    } 
+}
