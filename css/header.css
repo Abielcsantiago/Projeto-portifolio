@@ -90,9 +90,3 @@ header li a:hover::after{
         display:none;
     }
 }
-@media(max-width:730px){
-
-    header li:hover{
-        color:inherit; 
-    }
-}
