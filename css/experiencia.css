@@ -1,8 +1,8 @@
 #experiencia .align-content{
     display:grid;
     grid-template-columns: 1fr 1.5fr;
-    padding-top:150px;
-    padding-bottom:150px;
+    padding-top:100px;
+    padding-bottom:100px;
 }
 #experiencia h2{
     font-size: 8rem;
@@ -10,7 +10,6 @@
     color:#E0E0E0;
     max-width:4ch;
     place-items:center start ;
-    
 }
 #experiencia .primeiro-paragrafo{
     font-size:1.4rem;
