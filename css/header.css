@@ -96,7 +96,7 @@ header li a:hover::after{
         transition-duration:.3s;
         position:fixed;
         z-index:2;
-        right:40px;
+        right:30px;
         background-color:white;
     }
     #mobile-bttn span{
