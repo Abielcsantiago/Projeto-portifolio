@@ -53,8 +53,9 @@ header li a:hover::after{
         flex-direction: column;
         flex-wrap:wrap;
         justify-content: start;
-        padding:20px;
+        align-items:stretch;
         margin-top:100px;
+        gap:0px;
     }
     nav.mobile{
         display:flex;
@@ -67,13 +68,20 @@ header li a:hover::after{
         right:0;
         z-index:1;
         box-shadow:-5px 0 40px 0 #0000006e;
-        padding:0 30px;
+        padding:20px;
     }
+    
     .mobile a{
         color:#000;
-        padding:10px 15px;
-        border-radius:5px;
-        border:1px solid #000;
+        padding:10px 50px;
+        text-align:center;
+        border-top:1px solid #000;
+    }
+    .mobile ul li:last-child a{
+        border-bottom:1px solid #000;
+    }
+    .mobile a:hover{
+        color: #70DA1C;
     }
     #mobile-bttn.ativo{
         rotate:90deg; 
