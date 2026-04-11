@@ -52,8 +52,9 @@ header li a:hover::after{
         display:flex;
         flex-direction: column;
         flex-wrap:wrap;
-        justify-content: center;
+        justify-content: start;
         padding:20px;
+        margin-top:100px;
     }
     nav.mobile{
         display:flex;
