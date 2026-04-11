@@ -1,12 +1,14 @@
 header{
-    padding:40px;
-    position:relative;
+
 }
 header .align-content{
     display:flex;
     place-content:center space-between;
     flex-wrap:nowrap;
     align-items:center;
+    position:relative;
+    padding-top:40px;
+    padding-bottom:40px;
 }
 #container-logo img{
     width:100%;
@@ -39,27 +41,38 @@ header li a:hover::after{
 }
 @media(max-width:900px){
     header .align-content{
-        flex-direction:column;
+        /* flex-direction:column;
         gap:20px;
-        place-content:stretch center;
+        place-content:stretch center; */
     }
     header nav{
         display:none;
     }
     .mobile ul{
         display:flex;
+        flex-direction: column;
         flex-wrap:wrap;
         justify-content: center;
+        padding:20px;
     }
     nav.mobile{
         display:flex;
+        position:fixed;
         color:#fff;
         justify-content: center;
+        background-color:#fff;
+        top:0;
+        bottom:0;
+        right:0;
+        z-index:1;
+        box-shadow:-5px 0 40px 0 #0000006e;
+        padding:0 30px;
     }
     .mobile a{
-        background-color:#000;
+        color:#000;
         padding:10px 15px;
         border-radius:5px;
+        border:1px solid #000;
     }
     #mobile-bttn.ativo{
         rotate:90deg; 
@@ -68,23 +81,23 @@ header li a:hover::after{
         display:block;
         border:none;
         cursor:pointer;
-        background-color:#000;
-        padding:7px;
+        padding:5px;
+        background-color:transparent;
         border-radius:5px;
         transition-duration:.3s;
-        position:absolute;
-        right:20px;
-        top:50px;
-        z-index:1;
+        position:fixed;
+        z-index:2;
+        right:40px;
+        background-color:white;
     }
     #mobile-bttn span{
         width:25px;
         height:3px;
         display:block;
-        background-color:#fff;
+        background-color:#000;
     }
-    #mobile-bttn span:nth-child(2){
-        margin:4px 0;
+    #mobile-bttn span:not(#mobile-bttn span:last-child){
+        margin-bottom:4px;
     }
     .mobile li a::after{
         display:none;
