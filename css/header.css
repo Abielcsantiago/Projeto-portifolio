@@ -26,12 +26,13 @@ header li a{
 }
 header li a::after{
     content:'';
-    height:4px;
+    height:3px;
     width:0;
     display:block;
     margin:0 auto;
-    background-color:#70DA1C;
+    background-color:#000;
     transition-duration:0.4s;
+    border-radius:5px;
 }
 header li a:hover::after{
     width:100%;
@@ -80,7 +81,7 @@ header li a:hover::after{
     .mobile ul li:last-child a{
         border-bottom:1px solid #000;
     }
-    .mobile a:hover{
+    .mobile a:active{
         color: #70DA1C;
     }
     #mobile-bttn.ativo{
